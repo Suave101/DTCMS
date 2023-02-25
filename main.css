@@ -1,0 +1,51 @@
+body {
+    background-color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+.topnav {
+  background-color: rgb(4, 0, 214);
+  overflow: hidden;
+  border-radius: 1em;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#scoresPanel {
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 1em;
+    background-color: rgb(4, 0, 214);
+}
+.competitionGroup {
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background-color: darkblue;
+    padding: 1em;
+    margin-bottom: 0.25em;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+tr:hover {
+    background-color: rgb(4, 0, 214);
+}

@@ -1,0 +1,38 @@
+{
+    "HS#0": {
+        "id": "HS#0",
+        "Grade": "High School",
+        "teamScores": {
+            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Eagles": {"name": "Eagles", "TeamMembers": ["Hangman", "Phoenix"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Bulldogs": {"name": "Bulldogs", "TeamMembers": ["Goose", "Ice Man"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100}
+        },
+        "date": "2/24/2023",
+        "comments": "This is a Fake Group"
+    },
+    "MS#0": {
+        "id": "MS#0",
+        "Grade": "Middle School",
+        "teamScores": {
+            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Eagles": {"name": "Eagles", "TeamMembers": ["Hangman", "Phoenix"], "KnoP": 100, "SimP": 100, "FlyP": 10, "AutP": 100, "MisP": 100},
+            "Bulldogs": {"name": "Bulldogs", "TeamMembers": ["Goose", "Ice Man"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100}
+          },
+          "date": "2/24/2023",
+          "comments": "This is a Fake Group"
+    },
+    "ES#0": {
+        "id": "ES#0",
+        "Grade": "Elementry School",
+        "teamScores": {
+            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Eagles": {"name": "Eagles", "TeamMembers": ["Hangman", "Phoenix"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
+            "Bulldogs": {"name": "Bulldogs", "TeamMembers": ["Goose", "Ice Man"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100}
+          },
+          "date": "2/24/2023",
+          "comments": "This is a Fake Group"
+    }
+  }

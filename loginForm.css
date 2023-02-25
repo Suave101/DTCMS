@@ -1,0 +1,33 @@
+form {
+    border: 3px solid rgb(4, 0, 214);
+    border-radius: 1em;
+}
+input[type=text], input[type=password] {
+    background-color: rgb(4, 0, 214);
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid darkblue;
+    box-sizing: border-box;
+}
+button {
+    align-self: center;
+    background-color: rgb(4, 0, 214);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: whitesmoke;
+    color: darkblue;
+}
+.container {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
