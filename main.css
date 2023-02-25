@@ -2,14 +2,18 @@ body {
     background-color: darkblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 h1 {
     text-align: center;
+    width: 100%;
 }
 .topnav {
-  background-color: rgb(4, 0, 214);
-  overflow: hidden;
-  border-radius: 1em;
+    width: 100%;
+    background-color: rgb(4, 0, 214);
+    overflow: hidden;
+    border-radius: 1em;
 }
 .topnav a {
   float: left;

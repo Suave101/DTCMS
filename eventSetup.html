@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>DTC - Scoring System</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.php">Home</a>
+        <a href="currentScores.php">Current Scores</a>
+        <a href="login.html">Login</a>
+        <a href="#about">About</a>
+    </div>
+    <h1>Event Setup</h1>
+    <form action="submitEvent.php" method="post">
+        <div class="container">
+          <label for="Event_ID"><b>Event ID</b></label>
+          <input type="number" placeholder="Enter Event Name" name="Event_ID" min="1" required>
+          <label for="Event_Grade"><b>Event Grade</b></label>
+          <select name="Event_Grade">
+            <option value="High School">High School</option>
+            <option value="Middle School">Middle School</option>
+            <option value="Elementry School">Elementry School</option>
+          </select>
+          <button type="submit">Create</button>
+        </div>
+      </form>
+</body>
+</html>

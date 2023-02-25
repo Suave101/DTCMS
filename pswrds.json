@@ -2,6 +2,7 @@
     "Suave101": {
       "id": 1,
       "role": 0,
+      "event": -1,
       "first_name": "Alexander",
       "last_name": "Doyle",
       "pswd": "92325264848"
@@ -9,6 +10,7 @@
     "Oversight": {
       "id": 2,
       "role": 0,
+      "event": -1,
       "first_name": "Sean",
       "last_name": "McSheehy",
       "pswd": "$26.58.193.2"
