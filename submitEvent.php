@@ -4,7 +4,7 @@ $myfile = fopen("scores.json", "r") or die("Unable to open file!");
 $jsonFileString = fread($myfile, filesize("scores.json"));
 fclose($myfile);
 if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
-    if ($_SESSION["authenticated"] == true and $_SESSION["userData"]["role"] < 2) {
+    if ($_SESSION["authenticated"] == true and $_SESSION["userData"]["role"] < 3) {
         $authenticated = true;
     } else {
         header("Location: login.php");
@@ -28,7 +28,6 @@ if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
         <a href="index.php">Home</a>
         <a href="currentScores.php">Current Scores</a>
         <a href="login.php"><?php if (isset($_SESSION["authenticated"]) and $_SESSION["authenticated"] === true) {echo "Account Menu";} else {echo "Login";}?></a>
-        <a href="#about">About</a>
     </div>
     <?php
     if ($authenticated) {echo "hello";}?>

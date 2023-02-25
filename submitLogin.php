@@ -47,9 +47,8 @@ if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
         <a href="index.php">Home</a>
         <a href="currentScores.php">Current Scores</a>
         <a href="login.php"><?php if (isset($_SESSION["authenticated"]) and $_SESSION["authenticated"] === true) {echo "Account Menu";} else {echo "Login";}?></a>
-        <a href="#about">About</a>
     </div>
-    <h1>Welcome, <?php if ($authenticated) {if ($userData["role"] === 0){echo "Host";}}?> <?php if ($authenticated) {echo $userData["first_name"];}?></h1>
+    <h1>Welcome, <?php if ($authenticated) {if ($userData["role"] === 0){echo "Host";}if ($userData["role"] === 1){echo "Site Manager";}if ($userData["role"] === 2){echo "Site Technician";}if ($userData["role"] === 3){echo "Event Manager";}if ($userData["role"] === 4){echo "Event Technician";}if ($userData["role"] === 5){echo "Event Judge";}if ($userData["role"] === 6){echo "Team Leader";}}?> <?php if ($authenticated) {echo $userData["first_name"];}?></h1>
     <div class="verticalNav">
         <?php if ($authenticated) {if ($userData["role"] < 2){echo '<a href="accountManagment.php">Account Management</a>';}}?>
         <?php if ($authenticated) {if ($userData["role"] < 3){echo '<a href="eventSetup.php">Event Setup</a>';}}?>
