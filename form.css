@@ -6,7 +6,7 @@ form {
     flex-wrap: wrap;
     flex-grow: 1;
 }
-input[type=text], input[type=password], input[type=number] {
+input {
     background-color: rgb(4, 0, 214);
     color: white;
     width: 100%;
@@ -34,4 +34,16 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(4, 0, 214);
+    border: 0px;
+}
+option {
+    padding: 0.5em;
+    border: 0px;
 }

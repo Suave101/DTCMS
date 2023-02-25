@@ -4,8 +4,11 @@ $jsonFileString = fread($myfile, filesize("pswrds.json"));
 fclose($myfile);
 $jsonData = json_decode($jsonFileString, true);
 if (array_key_exists($_POST["uname"], $jsonData) and $jsonData[$_POST["uname"]]["pswd"] === $_POST["psw"]) {
+    $_SESSION["authenticated"] = true;
+    $_SESSION["userData"] = $jsonData[$_POST["uname"]];
     $authenticated = true;
     $userData = $jsonData[$_POST["uname"]];
+    session_start();
 } else {
     header("Location: login.html");
     die();
