@@ -1,5 +1,6 @@
 {
     "Suave101": {
+      "username": "Suave101",
       "id": 1,
       "role": 0,
       "event": -1,
@@ -8,6 +9,7 @@
       "pswd": "92325264848"
     },
     "Oversight": {
+      "username": "Oversight",
       "id": 2,
       "role": 0,
       "event": -1,

@@ -11,5 +11,19 @@
         <a href="currentScores.php">Current Scores</a>
         <a href="login.php"><?php if (isset($_SESSION["authenticated"]) and $_SESSION["authenticated"] === true) {echo "Account Menu";} else {echo "Login";}?></a>
     </div>
+    <div class="verticalNav">
+<?php 
+$myfile = fopen("pswrds.json", "r") or die("Unable to open file!");
+$jsonFileString = fread($myfile, filesize("pswrds.json"));
+fclose($myfile);
+$jsonData = json_decode($jsonFileString, true);
+foreach(array_keys($jsonData) as $account) {
+    // TODO: Make so Site Manager cannot see Hosts
+    echo "<div class='account'><p>";
+    echo $account;
+    echo "</p></div>";
+}
+?>
+    </div>
 </body>
 </html>
