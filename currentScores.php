@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>DTC Scoring System</h1>
     <div class="topnav">
         <a href="index.php">Home</a>
         <a href="currentScores.php">Current Scores</a>
-        <a href="login.html">Login</a>
+        <a href="login.php"><?php if (isset($_SESSION["authenticated"]) and $_SESSION["authenticated"] === true) {echo "Account Menu";} else {echo "Login";}?></a>
         <a href="#about">About</a>
     </div>
     <div id="scoresPanel">

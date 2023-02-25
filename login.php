@@ -1,3 +1,6 @@
+<?php session_start();if(isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])){if($_SESSION["authenticated"]==true and $_SESSION["userData"]["role"]<2)
+  {header("Location: submitLogin.php");die();}}?>
+
 <!DOCTYPE html>
 <head>
     <title>DTC - Scoring System</title>
@@ -9,7 +12,7 @@
     <div class="topnav">
         <a href="index.php">Home</a>
         <a href="currentScores.php">Current Scores</a>
-        <a href="login.html">Login</a>
+        <a href="login.php"><?php if (isset($_SESSION["authenticated"]) and $_SESSION["authenticated"] === true) {echo "Account Menu";} else {echo "Login";}?></a>
         <a href="#about">About</a>
     </div>
     <h1>Login</h1>
