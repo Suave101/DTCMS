@@ -15,7 +15,8 @@
         <h1>Welcome, <?php echo $_SESSION['userData']["first_name"]?></h1>
         <p>First Name: <?php echo $_SESSION['userData']["first_name"]?></p>
         <p>Last Name: <?php echo $_SESSION['userData']["last_name"]?></p>
-        <p>Title: <?php if ($_SESSION['userData']["role"] === 0){echo "Host";}if ($_SESSION['userData']["role"] === 1){echo "Site Manager";}if ($_SESSION['userData']["role"] === 2){echo "Site Technician";}if ($_SESSION['userData']["role"] === 3){echo "Event Manager";}if ($_SESSION['userData']["role"] === 4){echo "Event Technician";}if ($_SESSION['userData']["role"] === 5){echo "Event Judge";}if ($_SESSION['userData']["role"] === 6){echo "Team Leader";}?></p>
+        <p>Title: <?php if ($_SESSION["userData"]["role"] === 0){echo "Host";}if ($_SESSION["userData"]["role"] === 1){echo "Site Manager";}if ($_SESSION["userData"]["role"] === 2){echo "Site Technician";}if ($_SESSION["userData"]["role"] === 3){echo "Event Manager";}if ($_SESSION["userData"]["role"] === 4){echo "Event Technician";}if ($_SESSION["userData"]["role"] === 5){echo "Event Judge";}if ($_SESSION["userData"]["role"] === 6){echo "Team Leader";}?></p>
+        <p>If any details are incorrect, please contact a site manager or host.</p>
     </div>
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 body {
     background-color: darkblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -81,4 +83,25 @@ tr:hover {
   }
 .verticalNav > .account {
     width: 100%;
+}
+.account {
+    width: 100%;
+    margin: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(145, 0, 0);
+}
+.accountSubmitButton {
+    width: 100%;
+    border: 0px;
+    background-color: darkblue;
+    margin-bottom: 0.25em;
+    padding: 1em;
+    color: white;
+}
+.accountSubmitButton:hover {
+    background-color:rgb(4, 0, 214);
+}
+.account > input[text] {
+    background-color:rgb(4, 0, 214);
 }
