@@ -3,36 +3,10 @@
         "id": "HS#0",
         "Grade": "High School",
         "teamScores": {
-            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Eagles": {"name": "Eagles", "TeamMembers": ["Hangman", "Phoenix"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Bulldogs": {"name": "Bulldogs", "TeamMembers": ["Goose", "Ice Man"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100}
+            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": [{"Name": "A_Doyle", "Points": 1390}, {"Name": "A_Doyle", "Points": 90}, {"Name": "A_Doyle", "Points": 20000}], "SimP": 100, "FlyP": {"Pilot": "Sam", "Navigator": "Joe", "Run Time 1": 21, "Run Time 2": -1}, "AutP": 1.5, "MisP": 93.76},
+            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": [{"Name": "AD_Doyle", "Points": 6543}, {"Name": "AD_Doyle", "Points": 7654}, {"Name": "AD_Doyle", "Points": 7543}], "SimP": 100, "FlyP": {"Pilot": "Big", "Navigator": "YoYo", "Run Time 1": 21, "Run Time 2": 30}, "AutP": 3, "MisP": 93.76}
         },
-        "date": "2/24/2023",
+        "date": "#",
         "comments": "This is a Fake Group"
-    },
-    "MS#0": {
-        "id": "MS#0",
-        "Grade": "Middle School",
-        "teamScores": {
-            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Eagles": {"name": "Eagles", "TeamMembers": ["Hangman", "Phoenix"], "KnoP": 100, "SimP": 100, "FlyP": 10, "AutP": 100, "MisP": 100},
-            "Bulldogs": {"name": "Bulldogs", "TeamMembers": ["Goose", "Ice Man"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100}
-          },
-          "date": "2/24/2023",
-          "comments": "This is a Fake Group"
-    },
-    "ES#0": {
-        "id": "ES#0",
-        "Grade": "Elementry School",
-        "teamScores": {
-            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Eagles": {"name": "Eagles", "TeamMembers": ["Hangman", "Phoenix"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100},
-            "Bulldogs": {"name": "Bulldogs", "TeamMembers": ["Goose", "Ice Man"], "KnoP": 100, "SimP": 100, "FlyP": 100, "AutP": 100, "MisP": 100}
-          },
-          "date": "2/24/2023",
-          "comments": "This is a Fake Group"
     }
   }

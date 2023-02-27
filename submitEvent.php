@@ -14,6 +14,13 @@ if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
     header("Location: login.php");
     die();
 }
+// Event_ID, Event_Grade, Event_Date, Start_Time, End_Time
+if (isset($_POST["Event_ID"]) and isset($_POST["Event_Grade"]) and isset($_POST["Event_Date"]) and isset($_POST["Start_Time"]) and isset($_POST["End_Time"])) {
+    //
+} else {
+    header("Location: eventSetup.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +36,7 @@ if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
         <a href="currentScores.php">Current Scores</a>
         <a href="login.php"><?php if (isset($_SESSION["authenticated"]) and $_SESSION["authenticated"] === true) {echo "Account Menu";} else {echo "Login";}?></a>
     </div>
-    <?php
-    if ($authenticated) {echo "hello";}?>
+    <h1></h1>
+    <?php if ($authenticated) {echo "hello";}?>
 </body>
 </html>
