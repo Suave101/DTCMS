@@ -1,3 +1,4 @@
+<?php date_default_timezone_set("America/Chicago");?>
 <!DOCTYPE html>
 <head>
     <title>DTC - Scoring System</title>

@@ -1,4 +1,4 @@
-<?php session_start();if(isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])){if($_SESSION["authenticated"]==true and $_SESSION["userData"]["role"]<3){$authenticated=true;}else{header("Location: login.php");die();}}else{header("Location: login.php");die();}?>
+<?php date_default_timezone_set("America/Chicago");session_start();if(isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])){if($_SESSION["authenticated"]==true and $_SESSION["userData"]["role"]<3){$authenticated=true;}else{header("Location: login.php");die();}}else{header("Location: login.php");die();}?>
 <!DOCTYPE html>
 <head>
     <title>DTC - Scoring System</title>
@@ -14,15 +14,28 @@
         <a href="#about">About</a>
     </div>
     <h1>Event Setup</h1>
+    <p style="color: red;">Error: 
+    <?php 
+    if (isset($_GET["invalid"])) {
+      switch ($_GET["invalid"]) {
+        case 0:
+          echo "General Invalid Request";
+          break;
+        case 1:
+          echo "Start Time is Before End Time";
+          break;
+      }
+    }
+    ?></p>
     <form action="submitEvent.php" method="post">
         <div class="container">
           <label for="Event_ID"><b>Event ID</b></label>
           <input type="number" placeholder="Enter Event ID Number" name="Event_ID" min="1" required>
           <label for="Event_Grade"><b>Event Grade</b></label>
           <select name="Event_Grade">
-            <option value="High School">High School</option>
-            <option value="Middle School">Middle School</option>
-            <option value="Elementry School">Elementry School</option>
+            <option value="HS">High School</option>
+            <option value="MS">Middle School</option>
+            <option value="ES">Elementry School</option>
           </select>
           <label for="Event_Date"><b>Event Date</b></label>
           <input type="date" name="Event_Date" required>

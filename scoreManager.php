@@ -1,4 +1,4 @@
-<?php session_start();if(isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])){if($_SESSION["authenticated"]==true and $_SESSION["userData"]["role"]<5){$authenticated=true;}else{header("Location: login.php");die();}}else{header("Location: login.php");die();}?>
+<?php date_default_timezone_set("America/Chicago");session_start();if(isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])){if($_SESSION["authenticated"]==true and $_SESSION["userData"]["role"]<5){$authenticated=true;}else{header("Location: login.php");die();}}else{header("Location: login.php");die();}?>
 <!DOCTYPE html>
 <head>
     <title>DTC - Scoring System</title>

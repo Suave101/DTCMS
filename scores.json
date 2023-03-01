@@ -6,6 +6,18 @@
             "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": [{"Name": "A_Doyle", "Points": 1390}, {"Name": "A_Doyle", "Points": 90}, {"Name": "A_Doyle", "Points": 20000}], "SimP": 100, "FlyP": {"Pilot": "Sam", "Navigator": "Joe", "Run Time 1": 21, "Run Time 2": -1}, "AutP": 1.5, "MisP": 93.76},
             "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": [{"Name": "AD_Doyle", "Points": 6543}, {"Name": "AD_Doyle", "Points": 7654}, {"Name": "AD_Doyle", "Points": 7543}], "SimP": 100, "FlyP": {"Pilot": "Big", "Navigator": "YoYo", "Run Time 1": 21, "Run Time 2": 30}, "AutP": 3, "MisP": 93.76}
         },
+        "pointValuesAndTollerances": {
+            "KnowPVal": -1,
+            "SimPVal": -1,
+            "FlyPVal": -1,
+            "AutPVal": -1,
+            "MisPVal": -1,
+            "KnowPChn": -2,
+            "SimPChn": -2,
+            "FlyPChn": -2,
+            "AutPChn": -2,
+            "MisPChn": -2
+        },
         "date": "#",
         "comments": "This is a Fake Group"
     }
