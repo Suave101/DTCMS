@@ -1,1 +1,53 @@
-{"Suave101":{"username":"Suave101","role":0,"first_name":"Alexander","last_name":"Doyle","pswd":"123456"},"Oversight":{"username":"Oversight","role":0,"first_name":"Sean","last_name":"McSheehy","pswd":"$26.58.193.2"},"Rooster":{"username":"Rooster","role":1,"first_name":"Jordan","last_name":"Lambert","pswd":"1234"},"Ariana90":{"first_name":"Niki","role":2,"last_name":"Grande","pswd":"123456"},"Cat":{"first_name":"Nicola","role":3,"last_name":"Tesla","pswd":"123456"},"LunarEclipse100":{"first_name":"Albert","role":4,"last_name":"Einstein","pswd":"123456"},"Nuclear60":{"first_name":"Leo","role":5,"last_name":"Buyo","pswd":"123456"},"Sparticus":{"first_name":"M","role":6,"last_name":"Cook","pswd":"123456"}}
+{
+  "Suave101": {
+    "username": "Suave101",
+    "role": 0,
+    "first_name": "Alexander",
+    "last_name": "Doyle",
+    "pswd": "123456"
+  },
+  "Oversight": {
+    "username": "Oversight",
+    "role": 0,
+    "first_name": "Sean",
+    "last_name": "McSheehy",
+    "pswd": "$26.58.193.2"
+  },
+  "Rooster": {
+    "username": "Rooster",
+    "role": 1,
+    "first_name": "Jordan",
+    "last_name": "Lambert",
+    "pswd": "1234"
+  },
+  "Ariana90": {
+    "first_name": "Niki",
+    "role": 2,
+    "last_name": "Grande",
+    "pswd": "123456"
+  },
+  "Cat": {
+    "first_name": "Nicola",
+    "role": 3,
+    "last_name": "Tesla",
+    "pswd": "123456"
+  },
+  "LunarEclipse100": {
+    "first_name": "Albert",
+    "role": 4,
+    "last_name": "Einstein",
+    "pswd": "123456"
+  },
+  "Nuclear60": {
+    "first_name": "Leo",
+    "role": 5,
+    "last_name": "Buyo",
+    "pswd": "123456"
+  },
+  "Sparticus": {
+    "first_name": "M",
+    "role": 6,
+    "last_name": "Cook",
+    "pswd": "123456"
+  }
+}

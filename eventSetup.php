@@ -24,6 +24,8 @@
         case 1:
           echo "Start Time is Before End Time";
           break;
+        case 2:
+          echo "Event ID already in use. Note that each grade gets an ID therefore, High School, Middle School, and Elementry School can each have an ID of 1.";
       }
     }
     ?></p>

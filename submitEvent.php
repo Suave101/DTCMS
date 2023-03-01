@@ -20,10 +20,13 @@ if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
 if (isset($_POST["Event_ID"]) and isset($_POST["Event_Grade"]) and isset($_POST["Event_Date"]) and isset($_POST["Start_Time"]) and isset($_POST["End_Time"])) {
     if (strtotime(join(array($_POST["Event_Date"], " ", $_POST["Start_Time"]))) < strtotime(join(array($_POST["Event_Date"], " ", $_POST["End_Time"])))) {
         if (array_key_exists(join(array($_POST["Event_Grade"], "#", $_POST["Event_ID"])), $jsonData)) {
-            header("Location: eventSetup.php?invalid=1");
+            header("Location: eventSetup.php?invalid=2");
             die();
         } else {
-            // TODO: Generate Event Skeleton
+            $jsonData[join(array($_POST["Event_Grade"], "#", $_POST["Event_ID"]))] = array("Grade"=>$_POST["Event_Grade"], "teamScores"=>false, "pointValuesAndTollerances"=>false, "startTime"=>strtotime(join(array($_POST["Event_Date"], " ", $_POST["Start_Time"]))), "endTime"=>strtotime(join(array($_POST["Event_Date"], " ", $_POST["End_Time"]))));
+            $myfile = fopen("scores.json", "w") or die("Unable to open file!");
+            fwrite($myfile, json_encode($jsonData));
+            fclose($myfile);
             $successful = true;
         }
     } else {
@@ -34,30 +37,6 @@ if (isset($_POST["Event_ID"]) and isset($_POST["Event_Grade"]) and isset($_POST[
     header("Location: eventSetup.php?invalid=0");
     die();
 }
-//{
-//    "HS#0": {
-//        "id": "HS#0",
-//        "Grade": "High School",
-//        "teamScores": {
-//            "Vikings": {"name": "Vikings", "TeamMembers": ["Rooster", "Mavrick"], "KnoP": [{"Name": "A_Doyle", "Points": 1390}, {"Name": "A_Doyle", "Points": 90}, {"Name": "A_Doyle", "Points": 20000}], "SimP": 100, "FlyP": {"Pilot": "Sam", "Navigator": "Joe", "Run Time 1": 21, "Run Time 2": -1}, "AutP": 1.5, "MisP": 93.76},
-//            "Indians": {"name": "Indians", "TeamMembers": ["Oversight", "Bob"], "KnoP": [{"Name": "AD_Doyle", "Points": 6543}, {"Name": "AD_Doyle", "Points": 7654}, {"Name": "AD_Doyle", "Points": 7543}], "SimP": 100, "FlyP": {"Pilot": "Big", "Navigator": "YoYo", "Run Time 1": 21, "Run Time 2": 30}, "AutP": 3, "MisP": 93.76}
-//        },
-//        "pointValuesAndTollerances": {
-//            "KnowPVal": -1,
-//            "SimPVal": -1,
-//            "FlyPVal": -1,
-//            "AutPVal": -1,
-//            "MisPVal": -1,
-//            "KnowPChn": -2,
-//            "SimPChn": -2,
-//            "FlyPChn": -2,
-//            "AutPChn": -2,
-//            "MisPChn": -2
-//        },
-//        "date": "#",
-//        "comments": "This is a Fake Group"
-//    }
-//  }
 ?>
 <!DOCTYPE html>
 <html>
