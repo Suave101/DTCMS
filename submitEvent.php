@@ -16,7 +16,6 @@ if (isset($_SESSION["authenticated"]) and isset($_SESSION["userData"])) {
     header("Location: login.php");
     die();
 }
-// Event_ID, Event_Grade, Event_Date, Start_Time, End_Time
 if (isset($_POST["Event_ID"]) and isset($_POST["Event_Grade"]) and isset($_POST["Event_Date"]) and isset($_POST["Start_Time"]) and isset($_POST["End_Time"])) {
     if (strtotime(join(array($_POST["Event_Date"], " ", $_POST["Start_Time"]))) < strtotime(join(array($_POST["Event_Date"], " ", $_POST["End_Time"])))) {
         if (array_key_exists(join(array($_POST["Event_Grade"], "#", $_POST["Event_ID"])), $jsonData)) {
