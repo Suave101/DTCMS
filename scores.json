@@ -1,5 +1,85 @@
 {
-  "HS#1": {
+  "HS#0": {
+    "id": "HS#0",
+    "Grade": "High School",
+    "teamScores": {
+      "Vikings": {
+        "TeamMembers": [
+          "Rooster",
+          "Mavrick"
+        ],
+        "KnoP": [
+          {
+            "Name": "A_Doyle",
+            "Points": 1390
+          },
+          {
+            "Name": "A_Doyle",
+            "Points": 90
+          },
+          {
+            "Name": "A_Doyle",
+            "Points": 20000
+          }
+        ],
+        "SimP": 100,
+        "FlyP": {
+          "Pilot": "Sam",
+          "Navigator": "Joe",
+          "Run Time 1": 21,
+          "Run Time 2": -1
+        },
+        "AutP": 1.5,
+        "MisP": 93.76
+      },
+      "Indians": {
+        "name": "Indians",
+        "TeamMembers": [
+          "Oversight",
+          "Bob"
+        ],
+        "KnoP": [
+          {
+            "Name": "AD_Doyle",
+            "Points": 6543
+          },
+          {
+            "Name": "AD_Doyle",
+            "Points": 7654
+          },
+          {
+            "Name": "AD_Doyle",
+            "Points": 7543
+          }
+        ],
+        "SimP": 100,
+        "FlyP": {
+          "Pilot": "Big",
+          "Navigator": "YoYo",
+          "Run Time 1": 21,
+          "Run Time 2": 30
+        },
+        "AutP": 3,
+        "MisP": 93.76
+      }
+    },
+    "pointValuesAndTollerances": {
+      "KnowPVal": 20,
+      "SimPVal": 20,
+      "FlyPVal": 20,
+      "AutPVal": 20,
+      "MisPVal": 20,
+      "KnowPChn": 3,
+      "SimPChn": 3,
+      "FlyPChn": 2,
+      "AutPChn": 2,
+      "MisPChn": 1
+    },
+    "startTime": 0,
+    "endTime": 0,
+    "comments": "This is a Fake Group"
+  },
+  "High School#1": {
     "Grade": "High School",
     "teamScores": false,
     "pointValuesAndTollerances": false,
