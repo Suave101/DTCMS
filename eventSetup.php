@@ -14,21 +14,7 @@
         <a href="#about">About</a>
     </div>
     <h1>Event Setup</h1>
-    <p style="color: red;">Error: 
-    <?php 
-    if (isset($_GET["invalid"])) {
-      switch ($_GET["invalid"]) {
-        case 0:
-          echo "General Invalid Request";
-          break;
-        case 1:
-          echo "Start Time is Before End Time";
-          break;
-        case 2:
-          echo "Event ID already in use. Note that each grade gets an ID therefore, High School, Middle School, and Elementry School can each have an ID of 1.";
-      }
-    }
-    ?></p>
+    <p style="color: red;"><?php if (isset($_GET["invalid"])) {switch ($_GET["invalid"]) {case 0:echo "General Invalid Request";break;case 1:echo "Start Time is Before End Time";break;case 2:echo "Event ID already in use. Note that each grade gets an ID therefore, High School, Middle School, and Elementry School can each have an ID of 1.";}}?></p>
     <form action="submitEvent.php" method="post">
         <div class="container">
           <label for="Event_ID"><b>Event ID</b></label>
