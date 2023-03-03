@@ -4,10 +4,7 @@
     "Grade": "High School",
     "teamScores": {
       "Vikings": {
-        "TeamMembers": [
-          "Rooster",
-          "Mavrick"
-        ],
+        "TeamMembers": "Mavrick + Rooster",
         "KnoP": [
           {
             "Name": "A_Doyle",
@@ -29,15 +26,20 @@
           "Run Time 1": 21,
           "Run Time 2": -1
         },
-        "AutP": 1.5,
-        "MisP": 93.76
+        "AutP": {
+            "Senior Programmer": "Sam",
+            "Programming Assistants": "Joe + Jack",
+            "Run Time 1": 21,
+            "Run Time 2": -1
+          },
+        "MisP": {
+            "Team Members": "Sam",
+            "Points": 21
+          }
       },
       "Indians": {
         "name": "Indians",
-        "TeamMembers": [
-          "Oversight",
-          "Bob"
-        ],
+        "TeamMembers": "Oversight + Bob",
         "KnoP": [
           {
             "Name": "AD_Doyle",
@@ -78,12 +80,5 @@
     "startTime": 0,
     "endTime": 0,
     "comments": "This is a Fake Group"
-  },
-  "High School#1": {
-    "Grade": "High School",
-    "teamScores": false,
-    "pointValuesAndTollerances": false,
-    "startTime": -30588483624,
-    "endTime": -30588483564
   }
 }

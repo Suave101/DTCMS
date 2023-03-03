@@ -105,3 +105,29 @@ tr:hover {
 .account > input[text] {
     background-color:rgb(4, 0, 214);
 }
+.largeDataInput {
+    line-height: 2.5;
+}
+.largeDataInput > input {
+    background-color: darkblue;
+    color: white;
+    border-radius: 1em;
+    padding: 0.25em;
+}
+.accountTeam {
+    background-color: rgb(4, 0, 214);
+    padding: 1em;
+    margin: 1em;
+}
+.generalTeamInput {
+    background-color: darkblue;
+    color: white;
+    border-radius: 1em;
+    padding: 0.25em;
+}
+.addAccountTeamMember {
+    background-color: darkblue;
+    color: white;
+    border-radius: 1em;
+    padding: 0.25em;
+}

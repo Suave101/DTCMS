@@ -11,6 +11,30 @@
         <a href="login.php"></a>
     </div>
     <div class="verticalNav">
+        <form action="eventManager.php" class="account" method="post">
+            <h1>Event ID</h1>
+            <p class="largeDataInput">
+                Knowledge Weight:<input type="number" name="KnowPVal" min="0" value="20"><br>
+                Simulation Weight:<input type="number" name="SimPVal" min="0" value="20"><br>
+                Flight Weight:<input type="number" name="FlyPVal" min="0" value="20"><br>
+                Autonomous Weight:<input type="number" name="AutPVal" min="0" value="20"><br>
+                Mission Possible Weight:<input type="number" name="MisPVal" min="0" value="20"><br>
+                Knowledge Chances:<input type="number" name="KnowPChn" min="1" value="3"><br>
+                Simulation Chances:<input type="number" name="SimPChn" min="1" value="3"><br>
+                Flight Chances:<input type="number" name="FlyPChn" min="1" value="2"><br>
+                Autonomous Chances:<input type="number" name="AutPChn" min="1" value="2"><br>
+                Mission Possible Chances:<input type="number" name="MisPChn" min="1" value="1">
+            </p>
+            <div class="accountTeam">
+                <h2>Team Name</h2>
+                <input name="OGteamName" type="hidden" value="Team Name">
+                <p>
+                    Team Name: <input class="generalTeamInput" type="text" name="teamName" value="Team Name"><br>
+                    Team Members: <input class="generalTeamInput" type="text" name="teamMembers" value="Team Members"><br>
+                </p>
+            </div>
+            <input type="submit" class="generalTeamInput" style="width:100%;margin:1em;padding:0.5em;">
+        </form> 
         <a href="eventSetup.php" class="account" style="text-align: center;">Create New Event</a>
         </div>
 </body>
