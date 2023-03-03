@@ -70,30 +70,32 @@ fclose($myfile)
         <?php 
         foreach(array_keys($jsonData) as $account) {
             $userData = $jsonData[$account];
-            if ($authenticated) {if ($userData["role"] === 0){$role = "Host";}if ($userData["role"] === 1){$role ="Site Manager";}if ($userData["role"] === 2){$role ="Site Technician";}if ($userData["role"] === 3){$role ="Event Manager";}if ($userData["role"] === 4){$role ="Event Technician";}if ($userData["role"] === 5){$role ="Event Judge";}if ($userData["role"] === 6){$role ="Team Leader";}}
-            if ($_SESSION["userData"]["role"] > 0 and $role = "Host") {
-                break;
+            if ($authenticated) {if ($userData["role"] === 0){$role = "Host";}if ($userData["role"] === 1){$role = "Site Manager";}if ($userData["role"] === 2){$role ="Site Technician";}if ($userData["role"] === 3){$role ="Event Manager";}if ($userData["role"] === 4){$role ="Event Technician";}if ($userData["role"] === 5){$role ="Event Judge";}if ($userData["role"] === 6){$role ="Team Leader";}}
+            $showProfile = false;
+            if ($_SESSION["userData"]["role"] > 0 and $role !== "Host") {$showProfile = true;}
+            if ($_SESSION["userData"]["role"] === 0) {$showProfile = true;}
+            if ($showProfile) {
+                echo '<form action="accountManagment.php" class="account" method="post"><input name="username" type="hidden" value="';
+                echo $account;
+                echo '"><h2>';
+                echo $account;
+                echo '</h2><p>Role:<select name="role"><option value="';
+                echo $userData["role"];
+                echo '">';
+                echo $role;
+                echo '</option>';
+                if ($userData["role"] === 1) {echo '<option value="2">Site Technician</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
+                if ($userData["role"] === 2) {echo '<option value="1">Site Manager</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
+                if ($userData["role"] === 3) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="4">Event Technician</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
+                if ($userData["role"] === 4) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="3">Event Manager</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
+                if ($userData["role"] === 5) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="6">Team Leader</option>';}
+                if ($userData["role"] === 6) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="5">Event Judge</option>';}
+                echo '</select></p><p>First Name: <input name="first_name" type="text" value="';
+                echo $userData["first_name"];
+                echo '"></p><p>Last Name: <input name="last_name" type="text" value="';
+                echo $userData["last_name"];
+                echo '"></p><p>New Password (Longer than 5 Charcters): <input name="pswd" type="password"></p><input class="accountSubmitButton" type="submit" value="Submit Changes"></form>';
             }
-            echo '<form action="accountManagment.php" class="account" method="post"><input name="username" type="hidden" value="';
-            echo $account;
-            echo '"><h2>';
-            echo $account;
-            echo '</h2><p>Role:<select name="role"><option value="';
-            echo $userData["role"];
-            echo '">';
-            echo $role;
-            echo '</option>';
-            if ($userData["role"] === 1) {echo '<option value="2">Site Technician</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
-            if ($userData["role"] === 2) {echo '<option value="1">Site Manager</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
-            if ($userData["role"] === 3) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="4">Event Technician</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
-            if ($userData["role"] === 4) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="3">Event Manager</option><option value="5">Event Judge</option><option value="6">Team Leader</option>';}
-            if ($userData["role"] === 5) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="6">Team Leader</option>';}
-            if ($userData["role"] === 6) {echo '<option value="1">Site Manager</option><option value="2">Site Technician</option><option value="3">Event Manager</option><option value="4">Event Technician</option><option value="5">Event Judge</option>';}
-            echo '</select></p><p>First Name: <input name="first_name" type="text" value="';
-            echo $userData["first_name"];
-            echo '"></p><p>Last Name: <input name="last_name" type="text" value="';
-            echo $userData["last_name"];
-            echo '"></p><p>New Password (Longer than 5 Charcters): <input name="pswd" type="password"></p><input class="accountSubmitButton" type="submit" value="Submit Changes"></form>';
         }?>
         <a href="elevatedCreateAccount.php" class="account" style="text-align: center;">Create New Account</a>
         </div>
