@@ -30,7 +30,7 @@ The webservice should be able to manage events and store the scores, scoring cri
 Event Tag
 - Event ID
 - Event Grade (Ex. High School, Middle School, and Elementry School)
-- Event Scores (Data is strustured here)
+- Event Scores ([Data is strustured here](https://github.com/Suave101/DTCMS/tree/main#point-managment-and-display))
 - Event Point Values and Tollerances
   - Knowledge Point Value
   - Simulation Point Value
