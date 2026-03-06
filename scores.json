@@ -19,7 +19,11 @@
             "Points": 20000
           }
         ],
-        "SimP": 100,
+        "SimP": {
+          "Pilots": "YoYo + Bob",
+          "Run Time 1": 21,
+          "Run Time 2": 30
+        },
         "FlyP": {
           "Pilot": "Sam",
           "Navigator": "Joe",
@@ -27,7 +31,7 @@
           "Run Time 2": -1
         },
         "AutP": {
-            "Senior Programmer": "Sam",
+            "Cheif Programmer": "Sam",
             "Programming Assistants": "Joe + Jack",
             "Run Time 1": 21,
             "Run Time 2": -1
@@ -54,7 +58,11 @@
             "Points": 7543
           }
         ],
-        "SimP": 100,
+        "SimP": {
+          "Pilots": "YoYo + Bob",
+          "Run Time 1": 21,
+          "Run Time 2": 30
+        },
         "FlyP": {
           "Pilot": "Big",
           "Navigator": "YoYo",

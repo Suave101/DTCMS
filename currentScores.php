@@ -21,7 +21,7 @@
       foreach (json_decode($jsonFileString, true) as $competitionGroup) {
         echo join("", array('<div class="competitionGroup" id=', $competitionGroup["id"], '><h2>', $competitionGroup["Grade"], ' Scores', " (", $competitionGroup["id"],')</h2><table><tr><th>Team Name</th><th>Team Members</th><th>Knowledge Points</th><th>Simulation Points</th><th>Flight Points</th><th>Autonomous Points</th><th>Mission Possible Points</th><th>Total Points</th></tr>'));
         foreach ($competitionGroup["teamScores"] as $teamData) {
-          echo join("", array("<tr><td>", $teamData['name'],"</td><td>", join(" + ", $teamData["TeamMembers"]),"</td><td>", $teamData['KnoP'],"</td><td>", $teamData['SimP'],"</td><td>", $teamData['FlyP'],"</td><td>", $teamData['AutP'],"</td><td>", $teamData['MisP'],"</td><td>", ($teamData['KnoP'] + $teamData['SimP'] + $teamData['FlyP'] + $teamData['AutP'] + $teamData['MisP']),"</td><td>"));
+          echo join("", array("<tr><td>", $teamData['name'],"</td><td>", $teamData["TeamMembers"],"</td><td>", $teamData['KnoP'],"</td><td>", $teamData['SimP'],"</td><td>", $teamData['FlyP'],"</td><td>", $teamData['AutP'],"</td><td>", $teamData['MisP'],"</td><td>", ($teamData['KnoP'] + $teamData['SimP'] + $teamData['FlyP'] + $teamData['AutP'] + $teamData['MisP']),"</td><td>"));
         }
         echo '</table></div>';
       }

@@ -6,8 +6,8 @@ $myfile = fopen("scores.json", "r") or die("Unable to open file!");
 $jsonFileString = fread($myfile, filesize("scores.json"));
 fclose($myfile);
 $jsonData = json_decode($jsonFileString, true);
-// Check for POST Submission
-
+// Check for POST Submission $_POST[""]
+//
 ?>
 <!DOCTYPE html>
 <head>
@@ -53,7 +53,7 @@ $jsonData = json_decode($jsonFileString, true);
             // Teams
             foreach(array_keys($eventData['teamScores']) as $team) {
                 $teamData = $eventData['teamScores'][$team];
-                echo join('', array('<div class="accountTeam"><h2>', $team, '</h2><input name="OGteamName" type="hidden" value="', $team, '"><p>Team Name: <input class="generalTeamInput" type="text" name="teamName" value="', $team, '"><br>Team Members: <input class="generalTeamInput" type="text" name="teamMembers" value="', $teamData["TeamMembers"], '"><br></p></div>'));
+                echo join('', array('<div class="accountTeam"><h2>', $team, '</h2><input name="', $team, '#OGteamName" type="hidden" value="', $team, '"><p>Team Name: <input class="generalTeamInput" type="text" name="', $team, '#teamName" value="', $team, '"><br>Team Members: <input class="generalTeamInput" type="text" name="', $team, '#teamMembers" value="', $teamData["TeamMembers"], '"><br></p></div>'));
             }
             echo '<input type="submit" class="generalTeamInput" style="width:100%;margin:1em;padding:0.5em;"></form>';
         }
